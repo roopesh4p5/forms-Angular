@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Admin Login</h2>
+    <form (ngSubmit)="onSubmit()" #formval="ngForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" fornControlName="username" name="username" ngModel required>
+  
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" ngModel required password>
+  
+      <input type="submit" value="submit" [disabled]=!formval.valid>
+    </form>
+  </div>
+   
+<!-- //for the form validation requred attribute is added to the input element which will make sure value is true -->
